@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    body {
+      width: 372px;
+    }
+  </style>
   <title>Web Tracker</title>
   <script type="module" src="popup.js"></script>
+  <script type="module" src="display.js"></script>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+
 </head>
 <body>
+  
   <h1>Program</h1>
-  <button id="getURLButton">current URL</button>
+  <button id="getURLButton">Current URL</button>
   <p id="currentURL"></p>
+
+  <h2>Storage Data</h2>
+  <ul id="storageList"></ul>
+
 </body>
 </html>
